@@ -74,7 +74,7 @@ body {
   color: #000000;
 }
 .header .header__nav button,
-.banner button {
+.banner button, .abouts button {
   color: white;
   text-align: center;
   padding: 20px 30px;
@@ -91,7 +91,7 @@ body {
   display: block;
 }
 .header .header__nav button:hover,
-.banner button:hover {
+.banner button:hover, .abouts button:hover {
   background-image: linear-gradient(
     to left,
     #f55f8d 0,
@@ -102,6 +102,7 @@ body {
   transition: all 20s;
   cursor: pointer;
 }
+/* banner */
 .banner {
   background-image: url(./../img/pic2.png);
   background-repeat: no-repeat;
@@ -115,14 +116,14 @@ body {
   justify-content: space-around;
 }
 .banner .banner__left .sub__title,
-.services .service__title .sub__title {
+.services .service__title .sub__title, .abouts .about__right .sub__title {
   color: #f55f8d;
   font-weight: bold;
   font-size: 1.5rem;
   padding: 20px 0;
 }
 .banner .banner__left h2,
-.services .service__title h2 {
+.services .service__title h2, .abouts  .about__right h2{
   font-weight: bold;
   font-size: 4rem;
   padding-bottom: 20px;
@@ -171,7 +172,7 @@ body {
   background-repeat: no-repeat;
   background-position: top center;
   background-color: #fefefe;
-  margin-bottom: 200px;
+  margin-bottom: 100px;
 }
 .services .service__title {
   text-align: center;
@@ -214,4 +215,58 @@ body {
   padding-bottom: 20px;
   font-size: 1.2rem;
   line-height: 1.6rem;
+}
+/* abouts */
+.abouts {
+  background-image: url(./../img/bg15.png);
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-size: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  overflow: hidden;
+  margin-bottom: 100px;
+}
+
+.abouts .about__right .about__content {
+  padding-bottom: 20px;
+  color: #636363;
+  line-height: 1.5rem;
+}
+.abouts .about__right ul {
+  list-style: none;
+}
+.abouts .about__right ul li {
+  padding-bottom: 5px;
+  color: #636363;
+  vertical-align: middle;
+}
+.abouts .about__right ul i {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  color: #f55f8d;
+  background-color: white;
+  margin-right: 15px;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  padding-top: 8px;
+  font-size: 1.3rem;
+}
+.abouts .about__left {
+  width: 50%;
+}
+.abouts .about__left img {
+  width: 89%;
+  height: 75vh;
+  background-size: cover;
+  border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+.abouts .about__right {
+  width: 50%;
+  padding: 5px 60px 5px 0;
 }
